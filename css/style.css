@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
 *, *::after, ::before {
   box-sizing: border-box;
 }
@@ -9,6 +10,7 @@ html, body {
 }
 
 body {
+  font-family: nunito, comicsans;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -38,6 +40,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+.navigation nav a {
+  padding: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(77, 76, 76);
 }
 
 /*# sourceMappingURL=style.css.map */
