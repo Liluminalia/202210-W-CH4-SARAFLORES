@@ -20,15 +20,19 @@ header{
     flex-direction:column;
     justify-content: space-between;
 }
+
 .rightbutton{
     border: 2px $oranger solid;
     text-transform: uppercase;
     border-radius: 0 50px 50px 50px;
+   
 }
 .rightbutton:hover{
     color:white;
     background-color: $oranger;
 }
+
+
 .navigation{
     display: flex;
     position: sticky;
@@ -59,7 +63,7 @@ header{
             padding: 0.5rem;
             text-decoration: none;
             font-weight: bold;
-            color: rgb(77, 76, 76);
+            color: black;
             border: none;
             
         }
@@ -93,6 +97,12 @@ section{
         justify-content:space-between;
         align-items: center;
     }
+    div{
+        span{
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    }
 }
 .images{
     min-height: 30%;
@@ -100,9 +110,27 @@ section{
     flex-direction: row;
     justify-content: center;
     gap: 20px;
-    img{
-        width: 50vh;
-        border-radius: 25px;
+    span{
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+        img{
+            width: 50vh;
+            border-radius: 25px;
+        }
+        div{
+            font-size: 0;
+        }
+        
+    }
+
+    img:hover{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items:center ;
+        font-size: 1rem;
     }
 }
 h1{
@@ -111,10 +139,6 @@ h1{
     color:$oranger;
 }
 
-span{
-    font-size: 3rem;
-    font-weight: bold;
-}
 .closerLook{
     min-width: 50vh;
     display: flex;

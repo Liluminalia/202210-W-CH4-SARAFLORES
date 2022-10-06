@@ -63,7 +63,7 @@ header {
   padding: 0.5rem;
   text-decoration: none;
   font-weight: bold;
-  color: rgb(77, 76, 76);
+  color: black;
   border: none;
 }
 .navigation nav select option {
@@ -94,6 +94,10 @@ section .closerLook {
   justify-content: space-between;
   align-items: center;
 }
+section div span {
+  font-size: 3rem;
+  font-weight: bold;
+}
 
 .images {
   min-height: 30%;
@@ -102,20 +106,31 @@ section .closerLook {
   justify-content: center;
   gap: 20px;
 }
-.images img {
+.images span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.images span img {
   width: 50vh;
   border-radius: 25px;
+}
+.images span div {
+  font-size: 0;
+}
+.images img:hover {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
 }
 
 h1 {
   font-size: 1rem;
   text-transform: uppercase;
   color: rgb(237, 100, 54);
-}
-
-span {
-  font-size: 3rem;
-  font-weight: bold;
 }
 
 .closerLook {
