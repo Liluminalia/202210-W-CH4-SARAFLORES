@@ -1,18 +1,14 @@
 {
-    "name": "official_bootcamp_2022_10_mad",
+    "name": "week1-sass",
     "version": "1.0.0",
-    "description": "Repositorio del Bootcamp 2022 10 Madrid",
+    "description": "",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "sass": "sass sass:css --watch"
     },
-    "keywords": [],
-    "author": "Alejandro Cerezo",
+    "author": "",
     "license": "ISC",
-    "prettier": {
-        "singleQuote": true
-    },
     "devDependencies": {
         "sass": "^1.55.0"
     }

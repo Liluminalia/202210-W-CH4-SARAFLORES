@@ -9,25 +9,39 @@
     <link rel="shortcut icon" href="./images/logo2.png" type="image/png">
 </head>
 <body>
-    <header>
-        <section class="navigation">
+    <header class="navigation">
             <img src="./images/logo2.png" alt="">
             <nav>
+                <label for="desplegables"></label>
                 <a href="./index.html">Home</a>
-                <a href="">Live Demo</a>
-                <a href="">Live Demo Blocks</a>
-                <a href="./index.html">buy now</a>
+                <select name="desplegables" id="LiveDemoButton" value="Live Demo">
+                    <option value="Live Demo">Live Demo</option>
+                    <option value="Pets Boarding Services">Pets Boarding Services</option>
+                    <option value="Pets Toys and Food Shop">Pets Toys and Food Shop</option>
+                    <option value="Pets Training School">Pets Training School</option>
+                </select>
+                <select name="desplegables" id="LiveDemoBlocks" value="Live Demo Blocks">
+                    <option value="Live Demo Blocks">Live Demo Blocks</option>
+                    <option value="Live Demo Blocks">Live Demo Blocks</option>
+                    <option value="Live Demo Blocks">Live Demo Blocks</option>
+                    <option value="Live Demo Blocks">Live Demo Blocks</option>
+                </select>
+                <a href="./index.html" class="rightbutton">buy now</a>
             </nav>
-        </section>
-        <section>
-            <h1>Takea closer look</h1>
-            <a href="./index.html">view all</a>
-        </section>
+        
     </header>
     <section>
-        <img src="./images/01.jpg" alt="">
-        <img src="./images/02.jpg" alt="">
-        <img src="./images/03.jpg" alt="">
+        <h1>pet activities</h1>
+        <div class="closerLook">
+            <span>Takea closer look</span>
+            <a href="./index.html" class="viewall">view all</a>
+        </div>
+        <div class="images">
+            <img src="./images/01.jpg" alt="">
+            <img src="./images/02.jpg" alt="">
+            <img src="./images/03.jpg" alt="">
+        </div>
     </section>
 </body>
 </html>
+

@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  font-family: nunito, comicsans;
+  font-family: nunito, nunito extrabold;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,30 +22,125 @@ header {
   justify-content: space-between;
 }
 
+.rightbutton {
+  border: 2px rgb(237, 100, 54) solid;
+  text-transform: uppercase;
+  border-radius: 0 50px 50px 50px;
+}
+
+.rightbutton:hover {
+  color: white;
+  background-color: rgb(237, 100, 54);
+}
+
 .navigation {
   display: flex;
+  position: sticky;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 1px 5px 1px rgb(237, 232, 232);
-  min-height: 15vh;
+  min-height: 10vh;
+  padding: 0 2%;
 }
 .navigation img {
-  height: 10vh;
+  height: 5vh;
   display: flex;
   align-items: flex-start;
 }
 .navigation nav {
   display: flex;
+  min-width: 50vh;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.navigation nav a {
-  padding: 1rem;
+.navigation nav :hover {
+  color: rgb(237, 100, 54);
+  text-decoration: underline;
+}
+.navigation nav a, .navigation nav select {
+  padding: 0.5rem;
   text-decoration: none;
   font-weight: bold;
   color: rgb(77, 76, 76);
+  border: none;
+}
+.navigation nav select option {
+  border-bottom: 1px black;
+}
+
+select {
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  text-rendering: geometricPrecision;
+  white-space: initial;
+  text-align: center;
+}
+
+section {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  gap: 20px;
+}
+section .closerLook {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.images {
+  min-height: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.images img {
+  width: 50vh;
+  border-radius: 25px;
+}
+
+h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgb(237, 100, 54);
+}
+
+span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.closerLook {
+  min-width: 50vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.viewall {
+  border: 2px rgb(237, 100, 54) solid;
+  color: white;
+  background-color: rgb(237, 100, 54);
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0 50px 50px 50px;
+}
+
+.viewall:hover {
+  color: rgb(237, 100, 54);
+  background-color: white;
+  border-radius: 0 50px 50px 50px;
+  border-color: rgb(237, 100, 54);
 }
 
 /*# sourceMappingURL=style.css.map */
