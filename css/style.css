@@ -22,14 +22,15 @@ header {
   justify-content: space-between;
 }
 
-.rightbutton {
+.rightbutton.rightbutton {
   border: 2px rgb(237, 100, 54) solid;
   text-transform: uppercase;
   border-radius: 0 50px 50px 50px;
 }
 
-.rightbutton:hover {
+.rightbutton.rightbutton:hover {
   color: white;
+  text-decoration: none;
   background-color: rgb(237, 100, 54);
 }
 
