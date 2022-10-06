@@ -1,0 +1,40 @@
+*,*::after,::before{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+header{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 5px 1px rgb(237, 232, 232);
+    min-height: 15vh;
+    img{
+        height: 10vh;
+        display: flex;
+        align-items: flex-start;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+}
